@@ -23,16 +23,13 @@ print(reverse_number(n))
 
 print("Palindrome:")
 def is_palindrome(n):
-    dup=n
-    rev=0
-    while(n>0):
-        last_digit=n%10
-        rev_number=rev*10+last_digit
-        n=n//10
-        if(dup==rev_number):
-            return True
-        else:
-            return False
+    dup = n
+    rev = 0
+    while n > 0:
+        last_digit = n % 10
+        rev = rev * 10 + last_digit
+        n = n // 10
+    return dup == rev
 n=int(input("enter a number:"))
 print(is_palindrome(n))        
         
